@@ -1,0 +1,114 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="nombreusuario" class="col-form-label">Resumen
+          <span class="text-danger font-weight-bold">*</span>
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.account.valor" [disabled]="false" type="text"
+            class="form-control input-peque" id="idcliente">
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="nombreusuario" class="col-form-label">Detalles
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.numeroDocumento.valor" [disabled]="false" type="text"
+            class="form-control input-peque" id="identicliente">
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="nombreusuario" class="col-form-label">Fuente
+          <span class="text-danger font-weight-bold">*</span>
+        </label>
+        <div>
+          <select [(ngModel)]="campos.formulario.canal.valor" [disabled]="false" class="form-control input-peque"
+            id="canal">
+            <option value="" selected disabled>Selecciona</option>
+            <option value="{{c.valorUnoo}}" *ngFor="let c of campos.selectCanal">{{c.valorDoos}}</option>
+          </select>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="nombreusuario" class="col-12 col-form-label">Clasificación
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.minTitular.valor" [disabled]="false" maxlength="10" minlength="8"
+            type="text" class="form-control input-peque" id="telefono">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.minTitular.color}}">
+            {{campos.formulario.minTitular.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="canal" class="col-form-label">Descripción técnica
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.minTitular.valor" [disabled]="false" maxlength="10" minlength="8"
+            type="text" class="form-control input-peque" id="telefono">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.minTitular.color}}">
+            {{campos.formulario.minTitular.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="nombreusuario" class="col-12 col-form-label">Segmento afectado
+        </label>
+        <div>
+          <select [(ngModel)]="campos.formulario.canal.valor" [disabled]="false" class="form-control input-peque"
+            id="canal">
+            <option value="" selected disabled>Selecciona</option>
+            <option value="{{c.valorUnoo}}" *ngFor="let c of campos.selectCanal">{{c.valorDoos}}</option>
+          </select>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="nombresReporta" class="col-12 col-form-label">Impacto
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.nombresReporta.nombresCompleto"
+            [disabled]="!campos.formulario.nombresReporta.campo" maxlength="100" type="text"
+            class="form-control input-peque" id="nombresReporta">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.nombresReporta.color}}">
+            {{campos.formulario.nombresReporta.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="canal" class="col-form-label">Urgencia
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.nombresReporta.nombresCompleto"
+            [disabled]="!campos.formulario.nombresReporta.campo" maxlength="100" type="text"
+            class="form-control input-peque" id="nombresReporta">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.nombresReporta.color}}">
+            {{campos.formulario.nombresReporta.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-12">
+      <h5 class="card-title">
+        <label for="nombreusuario" class="col-12 col-form-label">Prioridad
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.emailReporta.valor" [disabled]="!campos.formulario.emailReporta.campo"
+            type="text" class="form-control input-peque" id="nombreusuario">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.emailReporta.color}}">
+            {{campos.formulario.emailReporta.mensaje}}</h6>
+        </div>
+      </h5>
+
+    </div>
+  </div>

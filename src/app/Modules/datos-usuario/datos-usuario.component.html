@@ -1,0 +1,207 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="nombreusuario" class="col-form-label">Nombre del cliente
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.account.valor" [disabled]="!campos.formulario.account.campo" type="text"
+            class="form-control input-peque" id="idcliente">
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="nombreusuario" class="col-form-label">ID cliente
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.numeroDocumento.valor"
+            [disabled]="!campos.formulario.numeroDocumento.campo" type="text" class="form-control input-peque"
+            id="identicliente">
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="nombreusuario" class="col-form-label">Línea de teléfono con falla
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.nombresTitular.nombresCompleto"
+            [disabled]="!campos.formulario.nombresTitular.campo" type="text" class="form-control input-peque"
+            id="nombrecliente">
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="nombreusuario" class="col-12 col-form-label">Tipo de plan de la línea
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.minTitular.valor" [disabled]="!campos.formulario.minTitular.campo"
+            maxlength="10" minlength="8" type="text" class="form-control input-peque" id="telefono">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.minTitular.color}}">
+            {{campos.formulario.minTitular.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="canal" class="col-form-label">Tipo de línea
+        </label>
+        <div>
+          <select [(ngModel)]="campos.formulario.canal.valor" [disabled]="false" class="form-control input-peque"
+            id="canal">
+            <option value="" selected disabled>Selecciona</option>
+            <option value="{{c.valorUnoo}}" *ngFor="let c of campos.selectCanal">{{c.valorDoos}}</option>
+          </select>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="nombreusuario" class="col-12 col-form-label">Marca y modelo del equipo
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.minTitular.valor" [disabled]="false" maxlength="10" minlength="8"
+            type="text" class="form-control input-peque" id="telefono">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.minTitular.color}}">
+            {{campos.formulario.minTitular.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="nombresReporta" class="col-12 col-form-label">Tecnologías en las que experimenta la falla
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.nombresReporta.nombresCompleto"
+            [disabled]="!campos.formulario.nombresReporta.campo" maxlength="100" type="text"
+            class="form-control input-peque" id="nombresReporta">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.nombresReporta.color}}">
+            {{campos.formulario.nombresReporta.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="canal" class="col-form-label">Servicios afectados
+        </label>
+        <div>
+          <select [(ngModel)]="campos.formulario.canal.valor" [disabled]="false" class="form-control input-peque"
+            id="canal">
+            <option value="" selected disabled>Selecciona</option>
+            <option value="{{c.valorUnoo}}" *ngFor="let c of campos.selectCanal">{{c.valorDoos}}</option>
+          </select>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="nombreusuario" class="col-12 col-form-label">ID cuenta
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.emailReporta.valor" [disabled]="!campos.formulario.emailReporta.campo"
+            type="text" class="form-control input-peque" id="nombreusuario">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.emailReporta.color}}">
+            {{campos.formulario.emailReporta.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="nodo" class="col-form-label">Dirección
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.nodo.valor" [disabled]="!campos.formulario.nodo.campo" type="text"
+            class="form-control input-peque" id="nodo">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.nodo.color}}">
+            {{campos.formulario.nodo.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="ccmm" class="col-form-label">Barrio
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.ccmm.valor" [disabled]="!campos.formulario.ccmm.campo" type="text"
+            class="form-control input-peque" id="ccmm">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.ccmm.color}}">
+            {{campos.formulario.ccmm.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="transaccion" class="col-form-label">Ciudad / Municipio
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.transaccion.valor" [disabled]="!campos.formulario.transaccion.campo"
+            maxlength="50" type="text" class="form-control input-peque" id="transaccion">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.transaccion.color}}">
+            {{campos.formulario.transaccion.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="ccmm" class="col-form-label">Departamento
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.ccmm.valor" [disabled]="!campos.formulario.ccmm.campo" type="text"
+            class="form-control input-peque" id="ccmm">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.ccmm.color}}">
+            {{campos.formulario.ccmm.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="ccmm" class="col-form-label">Regional
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.ccmm.valor" [disabled]="!campos.formulario.ccmm.campo" type="text"
+            class="form-control input-peque" id="ccmm">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.ccmm.color}}">
+            {{campos.formulario.ccmm.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="ccmm" class="col-form-label">Tipo de zona
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.ccmm.valor" [disabled]="!campos.formulario.ccmm.campo" type="text"
+            class="form-control input-peque" id="ccmm">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.ccmm.color}}">
+            {{campos.formulario.ccmm.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title">
+        <label for="ccmm" class="col-form-label">Latitud
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.ccmm.valor" [disabled]="!campos.formulario.ccmm.campo" type="text"
+            class="form-control input-peque" id="ccmm">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.ccmm.color}}">
+            {{campos.formulario.ccmm.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+    <div class="col-12">
+      <h5 class="card-title">
+        <label for="ccmm" class="col-form-label">Longitud
+        </label>
+        <div>
+          <input [(ngModel)]="campos.formulario.ccmm.valor" [disabled]="!campos.formulario.ccmm.campo" type="text"
+            class="form-control input-peque" id="ccmm">
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.ccmm.color}}">
+            {{campos.formulario.ccmm.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+  </div>
+</div>

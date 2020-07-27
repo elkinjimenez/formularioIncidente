@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h5 class="card-title">
+        <label for="comentarios" class="col-form-label">Artículo de configuración
+        </label>
+        <div>
+          <textarea [(ngModel)]="campos.formulario.comentarios.valor" [disabled]="false" maxlength="50"
+            class="form-control" placeholder="Escribe máximo 50 caracteres" id="comentarios" rows="2"></textarea>
+          <h6 class="font-weight-bold mt-2 {{campos.formulario.comentarios.color}}">
+            {{campos.formulario.comentarios.mensaje}}</h6>
+        </div>
+      </h5>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- <div *ngIf="!this.sg['crear']" class="col-3">
+        <button class="btn btn-danger tamano btn-block">Ir a DIT</button>
+      </div> -->
+      <div class="col-3">
+        <button (click)="true" class="btn btn-danger tamano btn-block">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
